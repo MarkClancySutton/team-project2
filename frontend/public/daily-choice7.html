@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Daily Choice Question Review</title>
+	  <link rel="stylesheet" href="styles.css">
+	  <a href="index.html"><img src= "exit.png" width = "375" height = "150"></a>
+	     <!-- meSpeak.js library -->
+    <script src="../mespeak/mespeak.js"></script>
+
+    <!-- Set the voice and Config for meSpeak.js -->
+    <script>
+        meSpeak.loadConfig("mespeak_config.json");
+        meSpeak.loadVoice("voices/en/en-us.json");
+    </script>
+    <!-- functions to read the text using meSpeak.js -->
+    <script>
+        function readText() {
+            meSpeak.speak("If you want to go back to the questions you skipped, press the purple button. If you are happy with your answers hit the green button");
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+<a href="#" onclick="readText();"><img src="sound.png" width="150" height="150" class="a"></a>
+
+
+<h1 class = "a">If you want to go back to the questions you skipped, press the purple button. If
+ you don't want to answer them, press the green button</h1>
+<br>
+
+<br>
+<div class = "a">
+<a href="home.html"><img src= "submit.png" width = "600" height = "150" ></a>
+
+<br>
+<a href="daily-choice1.html"><img src= "goback.png" width = "600" height = "150" ></a>
+</div>
+<br>
+<br>
+
+
+</body>
+</html>

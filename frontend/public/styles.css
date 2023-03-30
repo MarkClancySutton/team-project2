@@ -1,0 +1,37 @@
+body {
+  background-color: white;
+	
+  
+}
+h1
+{
+	text-align: center;
+}
+image{
+	text-align: center;
+	position: relative;
+	top: -20px;
+	
+}
+div.a{
+	text-align: center;
+}
+
+div.b{
+	position: relative;
+	text-align: right;
+}
+
+img.a{
+	float: right;
+}
+
+h1.a {
+	font-size: 100px;
+}
+img.b {
+	border: 5px solid #555;
+}
+
+
+
