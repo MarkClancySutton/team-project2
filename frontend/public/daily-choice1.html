@@ -16,6 +16,12 @@
         function readText() {
             meSpeak.speak("Can you choose when you go to bed ");
         }
+		function readText1() {
+            meSpeak.speak("Yes or no");
+        }
+        function readText2() {
+            meSpeak.speak("I don't know or am unsure");
+        }
 
     </script>
 </head>
@@ -33,9 +39,11 @@
 </div>
 <br>
 <div class = "a">
+<a href="#" onclick="readText1();"><img src="sound.png" width="150" height="150" class=""></a>
 <a href="daily-choice2.html"><img src= "yes.png" width = "300" height = "150" ></a>
 <a href="daily-choice2.html"><img src= "no.png" width = "300" height = "150" ></a>
 <br>
+<a href="#" onclick="readText2();"><img src="sound.png" width="150" height="150" class=""></a>
 <a href="daily-choice2.html"><img src= "idk.png" width = "600" height = "150" ></a>
 </div>
 <br>
