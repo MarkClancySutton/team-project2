@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Social Question 2</title>
+	  <link rel="stylesheet" href="styles.css">
+	  <a href="index.html"><img src= "exit.png" width = "375" height = "150"></a>
+	     <!-- meSpeak.js library -->
+    <script src="../mespeak/mespeak.js"></script>
+
+    <!-- Set the voice and Config for meSpeak.js -->
+    <script>
+        meSpeak.loadConfig("mespeak_config.json");
+        meSpeak.loadVoice("voices/en/en-us.json");
+    </script>
+    <!-- functions to read the text using meSpeak.js -->
+    <script>
+        function readText() {
+            meSpeak.speak("Do you get help to use your phone?");
+        }
+        function readText1() {
+            meSpeak.speak("I do or I don't");
+        }
+        function readText2() {
+            meSpeak.speak("I don't know or am unsure");
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+<a href="#" onclick="readText();"><img src="sound.png" width="150" height="150" class="a"></a>
+
+
+<h1 class = "a">Do you get help to use your phone?</h1>
+<br>
+<div class = "a">
+<img src= "s2.png" width = "675" height = "675" class="b" >
+</div>
+<br>
+<div class = "a">
+    <a href="#" onclick="readText1();"><img src="sound.png" width="150" height="150" class=""></a>
+    <a href="social3.html"><img src= "yes.png" width = "300" height = "150" ></a>
+    <a href="social3.html"><img src= "no.png" width = "300" height = "150" ></a>
+    <br>
+    <a href="#" onclick="readText2();"><img src="sound.png" width="150" height="150" class=""></a>
+    <a href="social3.html"><img src= "idk.png" width = "600" height = "150" ></a>
+    </div>
+
+<br>
+<a href="social1.html"><img src= "back.png" width = "150" height = "150" ></a>
+<a href="social3.html"><img src= "forward.png" width = "150" height = "150" class = "a"></a>
+
+
+</body>
+</html>
