@@ -1,9 +1,9 @@
-//import the user scheama from usermodel
+//import the results scheama from usermodel
 import Results from  "../models/resultModel.js";
 
 
 
-//get Users from the database
+//get Results from the database
 export const getResults = async (req, res) => {
     try {
         const results = await Results.find();
@@ -16,7 +16,7 @@ export const getResults = async (req, res) => {
 
 
 
-// get the users info based on the id parameter
+// get the results info based on the id parameter
 export const getResultsById = async (req, res) => {
     try {
         const results = await Results.findById(req.params.id);
@@ -26,18 +26,19 @@ export const getResultsById = async (req, res) => {
     }
 }
 
-//Save and add the users info to the database
+
+
 export const saveResults = async (req, res) => {
     const results = new Results(req.body);
     try {
         const insertedresults = await results.save();
         res.status(201).json(insertedresults);
-    } catch (error) {// if function failed
-        res.status(400).json({message: "error inputing values into the database "});
+    } catch (error) { //if failed 
+        res.status(400).json({message: "Cannot save this data "});
     }
 }
 
-//Update the user based on the id of the document
+//Update the results based on the id of the document
 export const updateResults = async (req, res) => {
     try {
         const updatedresults = await Results.updateOne({_id:req.params.id}, {$set: req.body});

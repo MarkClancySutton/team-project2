@@ -22,6 +22,37 @@
         function readText2() {
             meSpeak.speak("I don't know or am unsure");
         }
+        function saveResults_yes () {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:3000/results", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+            question_no:"1.5",
+            answer:"Yes",
+            user_ID: "1"
+            
+        }))};
+        function saveResults_no () {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:3000/results", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+            question_no:"1.5",
+            answer:"No",
+            user_ID: "1"
+            
+        }))};
+
+        function saveResults_IDK () {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost:3000/results", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+            question_no:"1.5",
+            answer:"Unsure",
+            user_ID: "1"
+            
+        }))};
 
     </script>
 </head>
@@ -40,11 +71,11 @@
 <br>
 <div class = "a">
     <a href="#" onclick="readText1();"><img src="sound.png" width="150" height="150" class=""></a>
-    <a href="daily-choice2.html"><img src= "yes.png" width = "300" height = "150" ></a>
-    <a href="daily-choice2.html"><img src= "no.png" width = "300" height = "150" ></a>
+    <a href="daily-choice6.html "onclick="saveResults_yes();"><img src= "yes.png" width = "300" height = "150" ></a>
+    <a href="daily-choice6.html" onclick="saveResults_no();"><img src= "no.png" width = "300" height = "150" ></a>
     <br>
     <a href="#" onclick="readText2();"><img src="sound.png" width="150" height="150" class=""></a>
-    <a href="daily-choice6.html"><img src= "idk.png" width = "600" height = "150" ></a>
+    <a href="daily-choice6.html" onclick="saveResults_IDK();"><img src= "idk.png" width = "600" height = "150" ></a>
     </div>
 <br>
 
