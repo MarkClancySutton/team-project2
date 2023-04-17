@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home page </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- meSpeak.js library -->
+    <script src="../mespeak/mespeak.js"></script>
+
+    <!-- Set the voice and Config for meSpeak.js -->
+    <script>
+        meSpeak.loadConfig("mespeak_config.json");
+        meSpeak.loadVoice("voices/en/en-us.json");
+    </script>
+    <!-- functions to read the text using meSpeak.js -->
+    <script>
+        function readText() {
+            meSpeak.speak("Personal Choice/Daily Choice Making");
+        }
+
+        function readText1() {
+            meSpeak.speak("Access to environment & freedom of movement");
+        }
+        function readText2() {
+            meSpeak.speak("Best possible health/health topics");
+        }
+
+        function readText3() {
+            meSpeak.speak("Communication");
+        }
+
+        function readText4() {
+            meSpeak.speak("Social opportunities");
+        }
+
+        function readText5() {
+            meSpeak.speak("Finance and Personal Property");
+        }
+
+        function readText6() {
+            meSpeak.speak("Results");
+        }
+
+       
+    </script>
+</head>
+
+<body>
+<div id="root"></div>
+    <div class="a">
+        <h1>Click on a image to start</h1>
+        <br>
+        <h3>1.Personal Choice/Daily Choice Making</h3>
+        <br>
+        <a href="daily-choice1.html"><img src="daily-choice.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText();"><img src="sound.png" width="150" height="150" class="center"></a>
+        <h3>2.Access to environment and & freedom of movement</h3>
+        <br>
+        <a href="movement1.html"><img src="movement.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText1();"><img src="sound.png" width="150" height="150" class="center"></a>
+        <h3>3.Best possible health/health topics</h3>
+        <br>
+        <a href="health1.html"><img src="health.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText2();"><img src="sound.png" width="150" height="150"></a>
+        <h3>4.Communication</h3>
+        <br>
+        <a href="communication1.html"><img src="communication.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText3();"><img src="sound.png" width="150" height="150"></a>
+        <h3>5.Social opportunities</h3>
+        <br>
+        <a href="social1.html"><img src="social.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText4();"><img src="sound.png" width="150" height="150"></a>
+        <br>
+        <h3>6.Finance and Personal Property</h3>
+        <a href="finance1.html"><img src="finance.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText5();"><img src="sound.png" width="150" height="150"></a>
+        <br>
+        <h3>Results</h3>
+        <a href="http://localhost:3001/Results";><img src="results.png" width="325" height="325" class= "b"></a>
+        <a href="#" onclick="readText6();"><img src="sound.png" width="150" height="150"></a>
+
+    </div>
+</body>
+
+</html>

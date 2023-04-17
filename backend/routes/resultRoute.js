@@ -16,7 +16,7 @@ const router = express.Router();
 router.get('/results', getResults);
 router.get('/results/:id', getResultsById);
 router.post('/results', saveResults);
-router.patch('/resutls/:id', updateResults);
+router.patch('/resutls/:question_no', updateResults);
 
 
 //export all the routes 
